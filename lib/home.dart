@@ -2,6 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:edufrance_v1/selection.dart';
 import 'package:edufrance_v1/onas.dart';
+//import 'package:edufrance_v1/palette.dart';
 
 
 class HomePage extends StatefulWidget {

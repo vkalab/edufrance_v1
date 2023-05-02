@@ -1,7 +1,7 @@
 
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-
+import 'package:edufrance_v1/palette.dart';
 class onas extends StatefulWidget {
   const onas({Key? key}) : super(key: key);
 

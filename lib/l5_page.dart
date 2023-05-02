@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:edufrance_v1/home.dart';
-import 'dart:async';
+import 'package:edufrance_v1/palette.dart';
 
 class l5 extends StatefulWidget {
   const l5({Key? key}) : super(key: key);

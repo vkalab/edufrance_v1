@@ -1,6 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-
+//import 'package:edufrance_v1/palette.dart';
 class mluvnice3 extends StatefulWidget {
   const mluvnice3({Key? key}) : super(key: key);
 
@@ -40,7 +40,7 @@ class _mluvnice1State extends State<mluvnice3> {
               SizedBox(height: 15,),
               SizedBox(
                 width: 360,
-                child: Text('Osobní zájmena:',
+                child: Text('Tady bude gramatika.',
                   style: TextStyle(
                     fontSize: 14,
                     fontWeight: FontWeight.bold,),),),

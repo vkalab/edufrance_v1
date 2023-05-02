@@ -2,7 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 
-
+import 'package:edufrance_v1/palette.dart';
 class slovni extends StatefulWidget {
   const slovni({Key? key}) : super(key: key);
 
@@ -45,7 +45,8 @@ class _slovniState extends State<slovni> {
           //mainAxisAlignment: MainAxisAlignment.center,
           padding: EdgeInsets.all(25),
           child: Table(
-            border: TableBorder.all(),
+            border: TableBorder(horizontalInside: BorderSide(width: 0.5, color: Colors.indigo, style: BorderStyle.solid)),
+            //border: TableBorder.all(),
             //defaultColumnWidth: const FixedColumnWidth(200.0),
 
             children: [
@@ -55,10 +56,12 @@ class _slovniState extends State<slovni> {
                       " " + tabulka1Fj[i],
                       style: const TextStyle(
                         fontSize: 14,
+                        height: 2,
                         fontWeight: FontWeight.bold,),),
                     Text(
                       " " + tabulka1Cj[i],
                       style: const TextStyle(
+                          height: 2,
                           fontSize: 14),
                     )
                   ]

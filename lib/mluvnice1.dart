@@ -1,6 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-
+import 'package:edufrance_v1/palette.dart';
 class mluvnice1 extends StatefulWidget {
   const mluvnice1({Key? key}) : super(key: key);
 

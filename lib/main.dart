@@ -1,24 +1,17 @@
 //import 'package:flutter/cupertino.dart';
+import 'package:edufrance_v1/l2_page.dart';
 import 'package:flutter/material.dart';
 import 'package:edufrance_v1/home.dart';
-import 'dart:async';
+import 'package:edufrance_v1/palette.dart';
 
 import 'package:assets_audio_player/assets_audio_player.dart';
 import 'package:assets_audio_player/assets_audio_player.dart';
 
 
-Color customColor2 = Color.fromARGB(255, 3, 43, 82);
-Color modra1 = Color.fromARGB(255, 3, 43, 82);
 
 void main() {
-  MaterialColor modra = const MaterialColor(0xFF032B52, <int, Color>{
 
 
-  });
-  ThemeData themeData = ThemeData(
-    primarySwatch: Colors.indigo,
-    primaryColor: modra1,
-  );
   AssetsAudioPlayer.setupNotificationsOpenAction((notification) {
     return true;
   });
@@ -35,10 +28,10 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        primaryColor: modra1,
-        primarySwatch: Colors.indigo
+        primaryColor: Palette.kToDark[50],
+        primarySwatch: Palette.kToDark,
       ),
-      home: HomePage(),
+      home: l2(), //HomePage
     );
   }
 }

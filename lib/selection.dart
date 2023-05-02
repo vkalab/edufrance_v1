@@ -5,7 +5,7 @@ import 'package:edufrance_v1/l2_page.dart';
 import 'package:edufrance_v1/l3_page.dart';
 import 'package:edufrance_v1/l4_page.dart';
 import 'package:edufrance_v1/l5_page.dart';
-
+import 'package:edufrance_v1/palette.dart';
 class selection extends StatefulWidget {
   const selection({Key? key}) : super(key: key);
 

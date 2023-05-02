@@ -2,7 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:edufrance_v1/slova3.dart';
 import 'package:edufrance_v1/mluvnice3.dart';
-
+import 'package:edufrance_v1/palette.dart';
 class l3 extends StatefulWidget {
   const l3({Key? key}) : super(key: key);
 
