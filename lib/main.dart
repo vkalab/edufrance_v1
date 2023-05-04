@@ -31,7 +31,7 @@ class MyApp extends StatelessWidget {
         primaryColor: Palette.kToDark[50],
         primarySwatch: Palette.kToDark,
       ),
-      home: l2(), //HomePage
+      home: HomePage(), //HomePage
     );
   }
 }

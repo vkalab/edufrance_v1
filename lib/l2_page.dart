@@ -4,6 +4,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 //import 'package:edufrance_v1/slova2.dart';
 import 'package:edufrance_v1/palette.dart';
+import 'package:edufrance_v1/prid_jmen_page.dart';
 
 class l2 extends StatefulWidget {
   const l2({Key? key}) : super(key: key);
@@ -195,10 +196,18 @@ class _l2State extends State<l2> {
                     }),
               ),
               // const Image(image: AssetImage('graphics/l2_1.png'),),
+              SizedBox(height: 15,),
               const Text(
                 "Mluvnice:",
-                style: TextStyle(),
+                style: TextStyle(
+                    fontSize: 20,
+                    fontWeight: FontWeight.bold,
+
+                    //foreground:
+                    fontFamily: "Font1"),
+
               ),
+              SizedBox(height: 10,),
               const Text(
                 "Rody podstatných jmen: Ve francouzštině máme dva rody podstatných jmen - ženský a mužský.",
                 style: TextStyle(),
@@ -248,7 +257,11 @@ class _l2State extends State<l2> {
               const Text(
                 "Podle čeho rod podstatného jména poznat?",
                 style: TextStyle(
+                    fontSize: 20,
+                    fontWeight: FontWeight.bold,
 
+                    //foreground:
+                    fontFamily: "Font1"
                 ),
               ),
               const SizedBox(height: 15,),
@@ -279,7 +292,11 @@ class _l2State extends State<l2> {
                 overflow: TextOverflow.visible,
                 "Přípony typické pro mužský rod:",
                 style: TextStyle(
+                    fontSize: 20,
+                    fontWeight: FontWeight.bold,
 
+                    //foreground:
+                    fontFamily: "Font1"
                 ),
               ),
               Table(
@@ -619,9 +636,11 @@ class _l2State extends State<l2> {
               const Text(
                 "Množná čísla podstatných jmen:",
                 style: TextStyle(
-                    height: 2,
+                    fontSize: 20,
                     fontWeight: FontWeight.bold,
-                    fontSize: 14),
+
+                    //foreground:
+                    fontFamily: "Font1"),
               ),
 
               const Text(
@@ -629,11 +648,13 @@ class _l2State extends State<l2> {
                 style: TextStyle(
                     height: 2,
                    // fontWeight: FontWeight.bold,
-                    fontSize: 14),
+                    fontSize: 14,
+                fontWeight: FontWeight.bold),
               ),
               const Text(
                 "Setkáme se ale i s řadou výjimek.",
                 style: TextStyle(
+                    fontWeight: FontWeight.bold,
                     height: 2,
                     //fontWeight: FontWeight.bold,
                     fontSize: 14),
@@ -700,6 +721,24 @@ class _l2State extends State<l2> {
                 ),
                   ),]
               ),),
+              Align(
+                alignment: Alignment.center,
+                child: CupertinoButton.filled(
+                    borderRadius: BorderRadius.circular(40),
+                    child: const Text(
+                      ' Přídavná jména ',
+                      style: TextStyle(
+                          fontSize: 28,
+                          //foreground:
+                          fontFamily: "Font1"),
+                    ),
+                    onPressed: () {
+                      Navigator.of(context).push(
+                          MaterialPageRoute(builder: (BuildContext context) {
+                            return const prid_jmen();
+                          }));
+                    }),
+              ),
           ]
         ),
       ),
